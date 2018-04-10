@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TailwindCss - Login</title>
+    <meta name="description" content="A Simple Login Page Using TailwindCss.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Tailwind Css -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-grey-lighter text-base text-grey-darkest font-mono font-normal relative">
+    <div class="h-2 bg-blue"></div>
+    <div class="container p-8 mx-auto">
+        <div class="mx-auto max-w-sm">
+            <div class="py-8 text-center">
+                <svg class="mx-auto block h-24 mb-3" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="40" cy="40" r="40"></circle><filter x="-8.8%" y="-6.2%" width="117.5%" height="117.5%" filterUnits="objectBoundingBox" id="a"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"></feColorMatrix></filter><linearGradient x1="0%" y1="0%" y2="100%" id="c"><stop stop-color="#2383AE" offset="0%"></stop><stop stop-color="#6DD7B9" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><g transform="translate(5 5)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M25.6 33.92C27.52 26.24 32.32 22.4 40 22.4c11.52 0 12.96 8.64 18.72 10.08 3.84.96 7.2-.48 10.08-4.32-1.92 7.68-6.72 11.52-14.4 11.52-11.52 0-12.96-8.64-18.72-10.08-3.84-.96-7.2.48-10.08 4.32zM11.2 51.2c1.92-7.68 6.72-11.52 14.4-11.52 11.52 0 12.96 8.64 18.72 10.08 3.84.96 7.2-.48 10.08-4.32-1.92 7.68-6.72 11.52-14.4 11.52-11.52 0-12.96-8.64-18.72-10.08-3.84-.96-7.2.48-10.08 4.32z" fill="url(#c)" transform="translate(5 5)"></path></g></svg>
+            </div>
+
+            <div class="bg-white rounded shadow">
+                <div class="border-b border-grey-lighter py-8 font-bold text-black text-center text-xl tracking-wide uppercase">
+                    Login
+                </div>
+
+                <form class="px-8 py-8" method="post" action="login.php">
+                    <div class="mb-8">
+                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="ssn">
+                            Ssn
+                        </label>
+                        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded p-3" name="ssn" type="number" id="ssn" placeholder="1420591042" required>
+                    </div>
+                    <div class="mb-8">
+                        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="password">
+                            Password
+                        </label>
+                        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded p-3" name="password" type="password" id="password" placeholder="**************" required>
+                    </div>
+                    <div class="flex">
+                        <button type="submit" name="log_user" class="rounded bg-blue hover:bg-blue-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider">
+                            Login
+                        </button>
+                    </div>
+                </form>
+
+                <div class="border-t border-grey-lighter px-8 py-6">
+                    <div class="flex justify-between">
+                        <a href="register.html" class="font-bold text-blue hover:text-blue-dark no-underline">Don't have an account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
